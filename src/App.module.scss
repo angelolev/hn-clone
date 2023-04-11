@@ -1,0 +1,20 @@
+@use "./src/styles/base/base";
+@use "./src/styles/base/colors";
+@use "./src/styles/base/mixins";
+@use "./src//styles/base/spacing";
+
+.hits {
+  &__categories {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+    a {
+      border: 0.1rem solid colors.$light-silver;
+      border-radius: 0.2rem;
+      font-size: 1.2rem;
+      padding: 0.5rem 2rem;
+    }
+  }
+}
