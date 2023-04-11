@@ -20,6 +20,14 @@ export default function Favorites() {
     setFavoriteHits(getLocalStorage("favoriteHits"));
   }, []);
 
+  if (!favoriteHits.length) {
+    return (
+      <div className={styles.hits__empty}>
+        <h3>You don't have favorites yet</h3>
+      </div>
+    );
+  }
+
   return (
     <div className={styles.hits}>
       {favoriteHits.map((hit: IHit) => (

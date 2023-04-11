@@ -80,4 +80,10 @@
     cursor: pointer;
     margin-bottom: 2rem;
   }
+
+  &__empty {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 0;
+  }
 }
