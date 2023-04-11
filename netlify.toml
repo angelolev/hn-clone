@@ -1,5 +1,5 @@
 [[redirects]]
   from = "/api/*"
-  to = "https://hn.algolia.com/api/v1""
+  to = "https://hn.algolia.com/api/v1"
   status = 200
   force = true
