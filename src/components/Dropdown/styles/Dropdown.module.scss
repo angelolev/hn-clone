@@ -1,0 +1,85 @@
+@use "../../../styles/base/colors";
+
+.dropdown {
+  &__container {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 1.4rem;
+    text-align: left;
+    border: 0.1rem solid colors.$spanish-gray;
+    position: relative;
+    border-radius: 0.5rem;
+    max-width: 28rem;
+  }
+
+  &__input {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+  }
+
+  &__menu {
+    position: absolute;
+    transform: translateY(0.4rem);
+    width: 100%;
+    border: 0.1rem solid colors.$spanish-gray;
+    border-radius: 0.5rem;
+    overflow: auto;
+    max-height: 15rem;
+    background-color: colors.$white;
+    z-index: 99;
+  }
+
+  &__item {
+    padding: 0.5rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #9fc3f870;
+    }
+
+    &.active {
+      background-color: rgba(55, 50, 179, 0.8);
+      color: colors.$white;
+    }
+  }
+
+  &__itemSelected {
+    padding: 0.5rem;
+    cursor: pointer;
+    background-color: rgba(55, 50, 179, 0.8);
+    color: colors.$white;
+  }
+
+  &__searchBox {
+    padding: 0.5rem;
+    background-color: colors.$light-gray;
+
+    input {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 1rem;
+      border: 0.1 solid colors.$spanish-gray;
+    }
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  &__tagItem {
+    background-color: colors.$light-silver;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__tagClose {
+    display: flex;
+    align-items: center;
+  }
+}
