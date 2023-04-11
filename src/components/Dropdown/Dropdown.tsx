@@ -76,7 +76,7 @@ const Dropdown = ({ placeHolder, options, onChange }: IDropdown) => {
     return selectedValue.filter((o) => o.value !== option.value);
   };
 
-  const onTagRemove = (e: React.ChangeEvent, option: IFilter) => {
+  const onTagRemove = (e: React.MouseEvent, option: IFilter) => {
     e.stopPropagation();
     const newValue = removeOption(option);
     setSelectedValue(newValue);
