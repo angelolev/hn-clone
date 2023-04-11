@@ -8,7 +8,7 @@ export const useFetch = (query: string, page: number) => {
   const fetchHits = async () => {
     try {
       const response = await fetch(
-        `/api/search_by_date?query=${query}&page=${page}`
+        `/api/v1/search_by_date?query=${query}&page=${page}`
       );
       const { hits } = await response.json();
 

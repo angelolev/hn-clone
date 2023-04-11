@@ -6,10 +6,11 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "https://hn.algolia.com/api/v1",
+        target: "https://hn.algolia.com/api/",
         changeOrigin: true,
         secure: false,
         rewrite: (path) => path.replace(/^\/api/, ""),
+        ws: true,
       },
     },
   },
