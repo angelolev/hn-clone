@@ -1,0 +1,12 @@
+@use "../../../../src/styles/base/colors";
+@use "../../../../src/styles/base/spacing";
+
+.nav {
+  background-color: colors.$purple;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+
+  h1 {
+    color: colors.$white;
+  }
+}
