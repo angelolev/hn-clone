@@ -16,7 +16,8 @@ const Hit: React.FC<IHit> = ({
   newLimit = () => {},
   isLast,
 }) => {
-  const [isCurrrentlyFavorite, setIsCurrentlyFavorite] = useState(isFavorite);
+  const [isCurrrentlyFavorite, setIsCurrentlyFavorite] =
+    useState<boolean>(isFavorite);
 
   const handleFavorite = () => {
     setIsCurrentlyFavorite(!isCurrrentlyFavorite);

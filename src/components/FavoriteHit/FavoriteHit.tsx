@@ -14,7 +14,8 @@ const FavoriteHit: React.FC<IHit> = ({
   isFavorite,
   toggleFavorite,
 }) => {
-  const [isCurrrentlyFavorite, setIsCurrentlyFavorite] = useState(isFavorite);
+  const [isCurrrentlyFavorite, setIsCurrentlyFavorite] =
+    useState<boolean>(isFavorite);
 
   const handleFavorite = () => {
     setIsCurrentlyFavorite(!isCurrrentlyFavorite);
